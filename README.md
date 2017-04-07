@@ -1,9 +1,9 @@
 # sensor_interface
-This package is the interface between the ROV control system running on a Raspberry Pi and the sensors attached to the ROV. The sensors are read from an Arduino board, which acts as a ROS node by means of `rosserial_arduino`.
+This package provides a interface between arduino, ros and the mpu6050 imu. The sensor is read from an Arduino board, which acts as a ROS node by means of `rosserial_arduino`.
 
 ## Running the code
 * Build and upload the Arduino code
-* Run a translator node on the host (Raspberry Pi):
+* Run a translator node on the host
 `rosrun rosserial_python serial_node.py /dev/ttyUSB0`
 (Note: May also be `/dev/ttyACM0` or something else.)
 
@@ -20,9 +20,9 @@ Make sure that the correct Arduino board and serial port is specified in `firmwa
 * [rosserial_arduino](http://wiki.ros.org/rosserial_arduino)
 `sudo apt-get install ros-kinetic-rosserial-arduino`
 
+## Tested 
+ Some problems accured when running on arduino nano(ATmega328(p)). It works on arduino mega. on the host side its been tested together with the jetson tx1
 <!-- ## Notes -->
 
 
 
-
-uses: https://github.com/jrowberg/i2cdevlib
