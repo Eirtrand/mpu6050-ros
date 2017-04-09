@@ -21,7 +21,7 @@ Make sure that the correct Arduino board and serial port is specified in `firmwa
 `sudo apt-get install ros-kinetic-rosserial-arduino`
 
 ## Tested 
- Some problems accured when running on arduino nano(ATmega328(p)). It works on arduino mega. on the host side its been tested together with the jetson tx1
+ Some problems accured when running on arduino nano(ATmega328(p)). It works on arduino mega(ATmega2560). on the host side its been tested together with the jetson tx1
 <!-- ## Notes -->
 
 
